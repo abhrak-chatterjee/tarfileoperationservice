@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "8c66c171-1ba7-458b-9cca-dde95f6c0098",
+		"name": "tar-manipulation-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "import",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/abhra/Downloads/file1.tar.gz"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api-service/tfo/v1/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-service",
+						"tfo",
+						"v1",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTarFile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api-service/tfo/v1/files/download/file1.tar.gz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-service",
+						"tfo",
+						"v1",
+						"files",
+						"download",
+						"file1.tar.gz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTarFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api-service/tfo/v1/files/download/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-service",
+						"tfo",
+						"v1",
+						"files",
+						"download",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
