@@ -1,0 +1,12 @@
+# Pulling Maven image to build
+FROM maven:3.5-jdk-8-alpine
+
+## Declare WORKDIR
+WORKDIR /app
+
+## Copy src and pom.xml into WORKDIR
+COPY src /app/src
+COPY pom.xml /app
+
+# test project
+RUN mvn test

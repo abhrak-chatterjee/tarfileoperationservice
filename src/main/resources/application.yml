@@ -1,0 +1,11 @@
+spring:
+  profiles: default
+  application:
+    name: tarfileoperationservice
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 256MB
+      max-request-size: 256MB
+
+file.location: D:\Nokia\Files\
